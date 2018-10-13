@@ -53,7 +53,7 @@ public class UserSubMenu extends AppCompatActivity {
         @NonNull
         @Override
         public MenuHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            return new MenuHolder(LayoutInflater.from(context).inflate(R.layout.menu_card,parent,false));
+            return new MenuHolder(LayoutInflater.from(context).inflate(R.layout.card_menu,parent,false));
 
         }
 

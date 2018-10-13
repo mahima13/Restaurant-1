@@ -96,14 +96,19 @@ public class UserMenu extends AppCompatActivity{
 
     private void checkout() {
 
-        //Write to database
-        myRef.push().setValue(cartItemText.getText().toString());
+//        Write to database
+        String key = myRef.push().getKey();
+        assert key != null;
+        myRef.child(key).child("cart").setValue(MainActivity.cart);
+        myRef.child(key).child("total").setValue("Total is : "+MainActivity.total);
+//        myRef.push().setValue(cartItemText.getText().toString());
 
         Toast.makeText(this,"Checkout Successful Please wait For your order",Toast.LENGTH_LONG).show();
 
 
         MainActivity.cart.clear();
         MainActivity.total = 0;
+        startActivity(getPackageManager().getLaunchIntentForPackage("net.one97.paytm"));
         finish();
     }
 

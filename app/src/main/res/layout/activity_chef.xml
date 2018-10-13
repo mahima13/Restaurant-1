@@ -6,43 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".Chef">
 
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chef_list"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/delete_list"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/all_orders"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp" />
-        </LinearLayout>
-    </ScrollView>
-
-    <Button
-        android:id="@+id/delete_list"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Delete"
-        android:onClick="deleteList"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
