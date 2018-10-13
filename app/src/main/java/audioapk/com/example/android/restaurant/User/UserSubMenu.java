@@ -43,7 +43,7 @@ public class UserSubMenu extends AppCompatActivity {
         private Context context;
         private ArrayList<String> items;
 
-        public MenuListAdaptor(Context context, ArrayList<String> items) {
+        MenuListAdaptor(Context context, ArrayList<String> items) {
             this.context = context;
             this.items = items;
         }
@@ -104,10 +104,12 @@ public class UserSubMenu extends AppCompatActivity {
         public void onClick(View v) {
             if (checkBox.isChecked()){
                 checkBox.setChecked(false);
+                Log.i("Ketan",String.valueOf(MainActivity.cart));
                 int itemIndex = MainActivity.cart.indexOf(menuText.getText().toString());
                 MainActivity.total -= Integer.valueOf(MainActivity.cart.get(itemIndex+1));
                 MainActivity.cart.remove(itemIndex);
                 MainActivity.cart.remove(itemIndex);
+                Log.i("Ketan",String.valueOf(MainActivity.cart));
 
 
             }else {

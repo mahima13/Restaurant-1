@@ -42,7 +42,6 @@ public class Chef extends AppCompatActivity {
                 value.setLength(0);
 
 
-
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
@@ -50,8 +49,8 @@ public class Chef extends AppCompatActivity {
             }
         });
 
-
     }
+
 
 
     public void deleteList(View view) {
