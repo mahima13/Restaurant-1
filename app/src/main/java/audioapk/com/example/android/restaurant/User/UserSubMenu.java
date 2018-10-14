@@ -6,7 +6,6 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +25,7 @@ public class UserSubMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_sub_menu);
+
 
         Bundle bundle = getIntent().getExtras();
         assert bundle != null;
@@ -47,8 +47,6 @@ public class UserSubMenu extends AppCompatActivity {
             this.context = context;
             this.items = items;
         }
-
-
 
         @NonNull
         @Override
@@ -104,23 +102,19 @@ public class UserSubMenu extends AppCompatActivity {
         public void onClick(View v) {
             if (checkBox.isChecked()){
                 checkBox.setChecked(false);
-                Log.i("Ketan",String.valueOf(MainActivity.cart));
                 int itemIndex = MainActivity.cart.indexOf(menuText.getText().toString());
                 MainActivity.total -= Integer.valueOf(MainActivity.cart.get(itemIndex+1));
                 MainActivity.cart.remove(itemIndex);
                 MainActivity.cart.remove(itemIndex);
-                Log.i("Ketan",String.valueOf(MainActivity.cart));
 
 
             }else {
                 checkBox.setChecked(true);
 
-                Log.i("Ketan2",String.valueOf(MainActivity.cart));
                 MainActivity.cart.add(menuText.getText().toString());
                 MainActivity.cart.add(menuPrice.getText().toString());
                 MainActivity.total += Integer.valueOf(menuPrice.getText().toString());
 
-                Log.i("Ketan2",String.valueOf(MainActivity.cart));
             }
         }
     }

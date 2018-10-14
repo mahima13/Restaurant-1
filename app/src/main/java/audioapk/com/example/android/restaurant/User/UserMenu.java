@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -81,7 +80,6 @@ public class UserMenu extends AppCompatActivity{
         super.onStart();
 
 
-        Log.i("Ketan onStart",String.valueOf(MainActivity.cart));
 
         StringBuilder cartString = new StringBuilder();
         for (int i = 0; i < MainActivity.cart.size()-1; i+=2) {
