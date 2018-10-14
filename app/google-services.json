@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "608317954664",
+    "firebase_url": "https://restaurant-mahima.firebaseio.com",
+    "project_id": "restaurant-mahima",
+    "storage_bucket": "restaurant-mahima.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608317954664:android:096d862a80f883fa",
+        "android_client_info": {
+          "package_name": "audioapk.com.example.android.restaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608317954664-4rpadsd3gdo037rcbuou0tloht7eqe0o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "audioapk.com.example.android.restaurant",
+            "certificate_hash": "b56e483f87f612d5eeb1bd8b8dca789ad722e2d0"
+          }
+        },
+        {
+          "client_id": "608317954664-d7vfqkvt500paf35ikujufos50c1f8b9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS98o9K31e-dJAH4enz0OXbZD7cpa8MpM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608317954664-d7vfqkvt500paf35ikujufos50c1f8b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
